@@ -1,9 +1,9 @@
-<h1>Listing statuses</h1>
+<h1>Liste de statuts</h1>
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Content</th>
+    <th>Pseudo</th>
+    <th>Statut</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,13 +13,13 @@
   <tr>
     <td><%= status.name %></td>
     <td><%= status.content %></td>
-    <td><%= link_to 'Show', status %></td>
-    <td><%= link_to 'Edit', edit_status_path(status) %></td>
-    <td><%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Voir', status %></td>
+    <td><%= link_to 'Editer', edit_status_path(status) %></td>
+    <td><%= link_to 'Supprimer', status, method: :delete, data: { confirm: 'Êtes-vous sûr?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Status', new_status_path %>
+<%= link_to 'Nouveau Statut', new_status_path %>
